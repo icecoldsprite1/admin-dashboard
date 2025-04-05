@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #2f89fc;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+.sidebar-nav li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-nav a {
+    color: #fff;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+    opacity: 0.8;
+}
+
+.main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+}
+
+.header h1 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.search-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-user input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-user .user-info {
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.main-content {
+    width: calc(100% - 220px);
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.projects-section {
+    flex: 3;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.announcements, .trending {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.announcements h2, .trending h2 {
+    margin-bottom: 1rem;
+}
+
+.announcements ul, .trending ul {
+    list-style: none;
+}
+
+.announcements li, .trending li {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.announcements strong {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+}
+
+
